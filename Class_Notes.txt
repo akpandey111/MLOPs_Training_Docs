@@ -498,3 +498,295 @@ Next:::
 	Git CLI
 	
 	GitHub Repo Management 
+
+
+
+	
+#####################
+Day 3: 20th Nov. 2025
+#####################		
+	
+	Version Control System using Git 
+	
+	AWS Cloud Platform to Create EC2 instances 
+	
+	Install GIT Client in the Local Machine 
+	
+	git client / github / github action 
+		
+
+
+	What is Version Control System :
+
+		- Version Control the Source Code Changes 
+		- Is used to track the changes 
+		
+	
+	Micro-Services 
+
+
+	GIT :	
+		- Is a Open-Source Distributed VCS
+		- Version Control the Source Code Changes 
+		- Is used to track the changes 
+		- It is used to perform parallel development using Branching Techniques
+		
+	
+	File System to save the source code. 
+	
+		Create index.html 
+		
+		<html>
+		---
+		---
+		-
+		---
+		-
+		---
+		</html>
+		
+		save as index.html 
+	
+	
+		<html>
+		---asdf
+		---asdf
+		-
+		---
+		-
+		---
+		</html>	
+	
+		save as index.html 	
+		
+	Version Control System like Git :
+	
+	
+		Create index.html 
+		
+		<html>
+		---
+		---
+		-
+		---
+		-
+		---
+		</html>	
+	
+	
+		save as index.html		==> index.html_v1.0		(Tag/Version_Number/Commit_ID)
+	
+		<html>
+		---
+		---
+		-
+		---
+		-
+		---
+		</html>	
+		
+		save as index.html		==> index.html_v1.1
+		save as index.html		==> index.html_v1.2	
+		save as index.html		==> index.html_v1.3	
+		save as index.html		==> index.html_v1.4	
+		save as index.html		==> index.html_v1.5	
+	
+	
+	Working with Distributed Version Control System :	
+	
+		- Git File Workflow 
+		- Git Branching Techniques
+		- Git Cli Commands 
+		- Git Remote Repositories - GitHub
+		- Github Action
+		
+	
+	Git Client	--> Is Command Line Utility installed in Local Machine 
+	
+	GitHub 		--> Remote Git Repository Server 
+		
+	
+	- Git File Workflow 	
+		- What is Distributed VCS ? - Core Architecture of GIT 
+	
+	- Developers' Workload :
+	
+		-> New Project 		
+		-> Enhancement / Bug fixing Project
+		
+	- Git File Workflow ::::
+	
+	Local Machine :																				Remote Server(GitHub) :
+	
+	Install Git client 
+	
+	Working Directory 				Staging Area 				Local Repository					Remote Repository
+	
+	index.html		  -------------> index.html  --------------> index.html_v1.1 ------------------> index.html_v1.1
+						 git add 					git commit						  git push
+	index.html		  -------------> index.html  --------------> index.html_v1.2 ------------------> index.html_v1.2
+						 git add 					git commit						  git push
+	index.html		  -------------> index.html  --------------> index.html_v1.3 ------------------> index.html_v1.3
+						 git add 					git commit						  git push
+	index.html		  -------------> index.html  --------------> index.html_v1.4 ------------------> index.html_v1.4
+						 git add 					git commit						  git push
+	
+	
+	
+	
+	Git File Workflow Cli Commands :
+	
+	
+	
+	git clone		==>		To Copy/Clone the entire remote repository to local machine 	
+	
+	git add 		==> 	To add the change from Working Directory to Staging Area 
+	
+	git commit 		==> 	To Commit the changes from Staging Area to Local Repository
+	
+	git push		==> 	To push the changes from Local Repository to the Remote Repository
+	
+	git fetch/git pull ::
+	
+			-> Both git fetch and git pull commands are used to handle the incremental changes from Remote Repository
+
+
+			git fetch :	
+				- It is used to just check for incremental changes in Remote Repository, if any incremental changes exist, the git fetch command will update the details of the changes in the Local Repository not in the Working Directory.
+		
+		
+			git pull :
+				- It is used to check for incremental changes in Remote Repository, if any incremental changes exist, the git pull command will update the changes in the Local Repository as well as in the Working Directory.	
+				
+				As a best practice, it is always recommended to use git pull to keep the Local Repositories in-sync with Remote Repository
+				
+				git pull = git fetch + git merge 
+				
+				
+	git init 		==> 	To Intialize/Create local git repository
+							To Create default branch master/main 
+							To Create .git/ directory
+	
+	
+	
+	Install Git Client in Local Machine : 
+	
+		Linux/Windows/Mac 
+		
+		https://git-scm.com/install/windows
+		
+		https://git-scm.com/install/linux
+		
+		
+		Linux Operating System :::
+		
+			Linux Distributions : Ubuntu/Centos/RHEL/Fedora 
+			
+	
+		GIT : 
+		
+		Create AWS Free - Tier Account :
+			
+			- https://aws.amazon.com/console/
+			
+			- Create Free-tier Account 	-- 12 Months --> 
+			
+				- Personal Laptop 
+				
+					- Active Mobile Number, Credit/Debit Card(Enabled with International Transaction) & Email_ID
+					
+					- https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html
+			
+			- Create Free Github account - with Active Email_ID
+		
+			- Launch Linux/Window EC2 Instances (VMs)
+			
+		Personal Windows Laptop :
+		
+			- Install Git 
+			- Install Visual Studio Code 
+			
+			
+			On Windows :
+			
+				- git bash		(Linux Shell Commands)
+				- git cmd 		(Windows Poweshell Commands)
+				- git gui 	
+				
+				- Visual Studio Code - work with git repos 
+				
+			Open Git Bash :
+			
+				
+		Working Directory / Workspace Directory 	
+		
+		d: 
+		Main Folder 
+			Repo1
+			Repo2 
+			Repo3 
+			
+			
+		Eg.: 
+		
+			cd d:
+
+			mkdir Edu_MLOps11
+			cd Edu_MLOps11
+			mkdir repo1 
+			mkdir repo2 
+			
+			cd repo1 
+			
+			
+	Local Machine :																	
+				
+	Install Git client 		
+			
+	Working Directory 				Staging Area 				Local Repository		
+				
+	index.html		  -------------> index.html  --------------> index.html_v1.1			
+						 git add 					git commit								
+	index.html		  -------------> index.html  --------------> index.html_v1.2			
+						 git add 					git commit								
+	index.html		  -------------> index.html  --------------> index.html_v1.3			
+						 git add 					git commit						
+	index.html		  -------------> index.html  --------------> index.html_v1.4	
+						 git add 					git commit						
+		
+	
+	file1.txt 
+	
+	
+	Use Git Config Command to setup the User Name and EMail ID.
+	Before making very first commit, configure git user Name and Email ID.
+	
+	
+	Git Configurations:	
+	
+		Global Config: It is applicable for all the repositories	
+			
+			git config --global user.name "LoksaiETA"
+
+			git config --global user.email "LoksaiETA@sasdfas.com"
+
+
+		Local Config: It is applicable for a specific repository	
+		
+			git config user.name "Loksai"
+
+			git config user.email "Loksai@sasdfas.com"	
+	
+	Version Control System using GIT 
+	
+		- Based on Demo 
+			
+Next :
+
+	Git Cli Command : 
+	
+		To work with Local Repositories using Branches
+		
+			
+		
+			
