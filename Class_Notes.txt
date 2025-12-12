@@ -2925,5 +2925,59 @@ if "__name__" == "__main__":
 		python -m flask run	
 	
 		
-			
+
+		
+#######################
+Day 10: 12th Dec. 2025
+#######################	
+
+	Sample ML-Project ::
+	
+		- Create ML Projects	--> ML Algorithm 
+	
+		- Build & Execute - Test the Model 
+		
+		- Containerize the Project using Docker 
+		
+		- Execute as a Container
+		
+		- github-actions 
+		
+		- DVC / S3, MLFlow 
+		
+		- Kubernetes & Kubeflow 
+		
+		- AWS Sagemaker 
+		
+		https://github.com/orgs/Edu-MLOps-1125/repositories
+		
+		
+	Pre-Requisites :::
+	
+		1. Launch EC2 Instance Ubuntu 
+		
+		2. Enable the required ports - allow traffic / 8501
+		
+		3. Prepare Project Repo.
+		
+		4. Login to EC2 Instance 
+		
+		5. Install Docker ==> sudo apt install docker.io -y 
+		
+		6. git clone <Project_Repo>		# https://github.com/Edu-MLOps-1125/Loksai-feedback-analyzer
+		
+		7. docker build -t mlproj_img . 		# Build Docker Images 
+		
+		8. docker run -d -p 8501:8501 mlproj_img
+		
+		9. Open web browser : <public_ip>:8501 		# To Test the ML Model
+		
+
+Next ::
+
+	- github-actions 
+	
+	- DVC / S3, MLFlow 	
+
+					
 			
